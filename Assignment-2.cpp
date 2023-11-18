@@ -41,13 +41,16 @@ int main(){
     int src = 0;
     dist[src] = 0;
 
-    for(int i = 0; i < n-1 ; i++){
+    bool flag = true;
+    for(int i = 0; i < n-1 and flag; i++){
+        flag = false;
         for(auto it : edges){
             int u = it.first.first;
             int v = it.first.second;
             int w = it.second;
 
             if (dist[u] + w < dist[v]){
+                flag = true;
                 dist[v] = dist[u] + w;
             }
         }
