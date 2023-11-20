@@ -10,14 +10,14 @@ using namespace std;
 
 class Node{
 	public: 
-		int cost;
-		vector<vector<int>>matrix;
-		vector<int>path;
+	int cost;
+	vector<vector<int>>matrix;
+	vector<int>path;
 
-		Node(vector<vector<int>>matrix, vector<int>path){
-			this->matrix = matrix;
-			this->path = path;
-		}
+	Node(vector<vector<int>>matrix, vector<int>path){
+		this->matrix = matrix;
+		this->path = path;
+	}
 };
 
 class ComparisonClass{
